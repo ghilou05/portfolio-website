@@ -1,0 +1,122 @@
+.featured_projects {
+  margin-top: 50px;
+  padding: 0 50px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__heading {
+    margin-bottom: 20px;
+
+    &__title {
+      h2 {
+        margin: 0;
+      }
+    }
+  }
+
+  /* ===== CARDS (shared base) ===== */
+  &__cards {
+    width: 100%;
+  }
+
+  /* ===== DESKTOP: native horizontal scroll ===== */
+  &__cards--desktop {
+    display: flex;
+    gap: 40px;
+    padding: 20px 0;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  /* ===== MOBILE: Swiper ===== */
+  &__cards--mobile {
+    display: none !important;
+  }
+
+  /* ===== CARD ===== */
+  &__card {
+    flex: 0 0 auto;
+    min-width: 300px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    background-color: #2a2b3d;
+    border-radius: 7px;
+    padding: 10px 25px;
+
+    &__title {
+      h2 {
+        margin: 0;
+      }
+    }
+
+    &__buttons {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+
+      &__button1 {
+        background: #35509f;
+        padding: 5px 20px;
+        border-radius: 5px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        text-decoration: none;
+        color: inherit;
+      }
+
+      &__button2 {
+        background: #34354b;
+        padding: 5px 20px;
+        border-radius: 5px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        text-decoration: none;
+        color: inherit;
+      }
+    }
+  }
+}
+
+/* ===== SWIPER FIXES ===== */
+.swiper {
+//   width: 100%;
+}
+
+.swiper-slide {
+//   width: auto !important;
+  display: flex !important;
+  justify-content: center;
+}
+
+.swiper-wrapper {
+  padding-bottom: 40px;
+}
+
+/* ===== RESPONSIVE SWITCH ===== */
+@media (max-width: 1024px) {
+  .featured_projects {
+    padding: 0 20px;
+
+  }
+
+  .featured_projects__cards--desktop {
+    display: none;
+  }
+
+  .featured_projects__cards--mobile {
+    display: block !important;
+  }
+
+}

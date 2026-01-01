@@ -1,0 +1,127 @@
+@use "Variables" as *;
+
+/* Base layout */
+.navbar {
+    width: 100%;
+    background: linear-gradient(to right, $yellow, $light-blue);
+    // border-bottom: 1px solid #e1e1e1;
+}
+
+.navbar-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+}
+
+.navbar-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 0;
+    color: black;
+}
+
+/* Desktop links */
+.navbar-links {
+    display: flex;
+    gap: 24px;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: black;
+    transition: 0.2s ease;
+}
+
+.navbar-links a:hover {
+    color: #6366f1;
+}
+
+/* ----------------------------- */
+/*     HAMBURGER ANIMATION       */
+/* ----------------------------- */
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    z-index: 20; /* so it stays above menu */
+}
+
+.hamburger span {
+    width: 26px;
+    height: 3px;
+    background: black;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+/* Morph into X */
+.hamburger.open span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Mobile only */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+    }
+}
+
+/* ----------------------------- */
+/*     MOBILE SLIDE-DOWN MENU    */
+/* ----------------------------- */
+
+.mobile-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 0px 24px 0 24px;
+
+    /* hidden state */
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(-30px);
+
+    /* animation */
+    transition: 
+        max-height 0.35s ease,
+        opacity 0.25s ease,
+        transform 0.35s ease;
+}
+
+/* Slide open */
+.mobile-menu.open {
+    max-height: 300px; /* enough space for links */
+    opacity: 1;
+    transform: translateY(-8px);
+}
+
+.mobile-menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    padding: 6px 0;
+    transition: 0.2s ease;
+}
+
+.mobile-menu a:hover {
+    color: #6366f1;
+}

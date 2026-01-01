@@ -1,0 +1,23 @@
+.intro-block {
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
+
+    &-image {
+        img {
+            border-radius: 50%;
+            max-width: 100%;
+        }
+    }
+
+    &-text-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+    }
+}
+
