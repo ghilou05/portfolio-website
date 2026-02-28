@@ -3,7 +3,7 @@
 /* Base layout */
 .navbar {
     width: 100%;
-    background: linear-gradient(to right, $yellow, $light-blue);
+    background: #0a0f1e;
     // border-bottom: 1px solid #e1e1e1;
 }
 
@@ -15,22 +15,28 @@
 }
 
 .navbar-title {
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight: 600;
     margin: 0;
-    color: black;
+    color: #ffffff;
 }
 
 /* Desktop links */
 .navbar-links {
     display: flex;
-    gap: 24px;
-}
+    align-items: center;
+    gap: 12px;
 
-.navbar-links a {
-    text-decoration: none;
-    color: black;
-    transition: 0.2s ease;
+    a {
+        padding: 7.5px;
+        text-decoration: none;
+        color: #99a7eb;
+        transition: 0.3s ease;
+    }
+    a:hover {
+        background: #131734;
+        border-radius: 7px;
+    }
 }
 
 .navbar-links a:hover {
@@ -55,7 +61,7 @@
 .hamburger span {
     width: 26px;
     height: 3px;
-    background: black;
+    background: #cbd5e1;
     border-radius: 2px;
     transition: all 0.3s ease;
 }
@@ -88,40 +94,58 @@
 /*     MOBILE SLIDE-DOWN MENU    */
 /* ----------------------------- */
 
+/* ----------------------------- */
+/*     MOBILE FULL-SCREEN MENU   */
+/* ----------------------------- */
+
 .mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(10, 15, 30, 0.85); /* Slightly darker for better contrast */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px); /* Safari support */
+    
     display: flex;
     flex-direction: column;
-    gap: 14px;
-    padding: 0px 24px 0 24px;
-
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    z-index: 10; /* Below the hamburger button */
+    
     /* hidden state */
-    max-height: 0;
-    overflow: hidden;
     opacity: 0;
-    transform: translateY(-30px);
-
+    visibility: hidden;
+    transform: scale(1.1);
+    
     /* animation */
     transition: 
-        max-height 0.35s ease,
-        opacity 0.25s ease,
-        transform 0.35s ease;
+        opacity 0.3s ease,
+        visibility 0.3s ease,
+        transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* Slide open */
+/* Open state */
 .mobile-menu.open {
-    max-height: 300px; /* enough space for links */
     opacity: 1;
-    transform: translateY(-8px);
+    visibility: visible;
+    transform: scale(1);
 }
 
 .mobile-menu a {
     text-decoration: none;
-    color: black;
-    font-size: 1rem;
-    padding: 6px 0;
-    transition: 0.2s ease;
+    color: #ffffff;
+    font-size: 1.75rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: 0.3s ease;
+    padding: 10px 20px;
+    border-radius: 8px;
 }
 
 .mobile-menu a:hover {
     color: #6366f1;
+    background: rgba(99, 102, 241, 0.1);
 }
