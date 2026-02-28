@@ -1,33 +1,51 @@
-import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 
 const Navbar: React.FC = () => {
     const [hamburgerIsOpen, setHamburgerIsOpen] = useState(false);
 
-    return (    
+    useEffect(() => {
+        if (hamburgerIsOpen) {
+            document.body.style.overflow = "hidden";
+        } else {
+            document.body.style.overflow = "auto";
+        }
+        return () => {
+            document.body.style.overflow = "auto";
+        };
+    }, [hamburgerIsOpen]);
+
+    return (
         <nav className="navbar">
             <div className="navbar-inner">
-                <h2 className="navbar-title">Ghiles Bouaraba</h2>
+                <h2 className="navbar-title">ghilou.dev</h2>
 
-                <button className={`hamburger ${hamburgerIsOpen ? "open" : ""}`} onClick={() => setHamburgerIsOpen(!hamburgerIsOpen)}>
+                <button
+                    className={`hamburger ${hamburgerIsOpen ? "open" : ""}`}
+                    onClick={() => setHamburgerIsOpen(!hamburgerIsOpen)}
+                    aria-expanded={hamburgerIsOpen}
+                    aria-label="Toggle navigation menu"
+                >
                     <span></span>
                     <span></span>
                     <span></span>
                 </button>
 
                 <div className="navbar-links">
-                    <Link to="/about">About</Link>
-                    <Link to="/projects">Projects</Link>
-                    <Link to="/contact">Contact</Link>
+                    <a href="/">About</a>
+                    <a href="/">Projects</a>
+                    <a href="/">Experience</a>
+                    <a href="/">Contact</a>
+
                 </div>
             </div>
 
             <div className={`mobile-menu ${hamburgerIsOpen ? "open" : ""}`}>
-                <Link to="/about" onClick={() => setHamburgerIsOpen(false)}>About</Link>
-                <Link to="/projects" onClick={() => setHamburgerIsOpen(false)}>Projects</Link>
-                <Link to="/contact" onClick={() => setHamburgerIsOpen(false)}>Contact</Link>
-            </div>        
+                <a href="/" onClick={() => setHamburgerIsOpen(false)}>About</a>
+                <a href="/" onClick={() => setHamburgerIsOpen(false)}>Projects</a>
+                <a href="/" onClick={() => setHamburgerIsOpen(false)}>Experience</a>
+                <a href="/" onClick={() => setHamburgerIsOpen(false)}>Contact</a>
+            </div>
         </nav>
     )
 };
