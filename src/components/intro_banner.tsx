@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import React from 'react'
 
 const intro_banner: React.FC = () => {
@@ -6,7 +5,6 @@ const intro_banner: React.FC = () => {
         <div className="intro-banner">
             <div className="intro-banner__text-wrapper">
                 <div className="intro-banner__text-wrapper__headline">
-                    <h1>HI DAD</h1>
                     <h2 className="intro-banner__text-wrapper__headline__name">Hi, I'm <span className="blue-text">Ghiles Bouaraba</span>👋</h2>
                     <div className="intro-banner__text-wrapper__headline__desc1"> Computer Science & Mathematics Student</div>
                     <div className="intro-banner__text-wrapper__headline__desc2"><span className="blue-text">Developer</span> | Year in Industry</div>
