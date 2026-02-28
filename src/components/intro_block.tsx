@@ -1,4 +1,3 @@
-import { useState } from "react";
 import React from 'react'
 
 const intro_block:React.FC = () => {

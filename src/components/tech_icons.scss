@@ -3,9 +3,10 @@
     display: flex;
     gap: 15px;
     align-items: center;
-    justify-content: center;
-    padding: 0 50px;
+    margin-left: 50px;
+    margin-right: 50px;
     overflow: scroll;
+    scrollbar-width: none;
     min-height: fit-content;
     
     &__container {
