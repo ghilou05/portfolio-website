@@ -1,7 +1,8 @@
 import React from 'react'
 import { Swiper, SwiperSlide } from "swiper/react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faLayerGroup } from "@fortawesome/free-solid-svg-icons"
+import { faLayerGroup, faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons"
+import { faGithub } from "@fortawesome/free-brands-svg-icons"
 import { Pagination } from "swiper/modules";
 import "swiper/swiper-bundle.css";
 
@@ -56,7 +57,21 @@ const projects: Project[] = [
 
 const ProjectCard: React.FC<{ project: Project }> = ({ project }) => (
   <article className="featured_projects__card">
-    <FontAwesomeIcon icon={faLayerGroup} className="featured_projects__card__icon" />
+    <div className="featured_projects__card__top-area">
+      <FontAwesomeIcon icon={faLayerGroup} className="featured_projects__card__icon" />
+      <div className="featured_projects__card__links">
+        {project.repoUrl && (
+          <a href={project.repoUrl} target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faGithub} />
+          </a>
+        )}
+        {project.liveUrl && (
+          <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faExternalLinkAlt} />
+          </a>
+        )}
+      </div>
+    </div>
     <div className="featured_projects__card__text-wrapper">
       <div className="featured_projects__card__title">
         <h3>{project.title}</h3>
@@ -84,11 +99,14 @@ const ProjectCards: React.FC = () => {
   return (
     <section className="featured_projects">
       <div className="featured_projects__heading">
-        <div className="featured_projects__heading__title">
-          <h2>Featured Projects</h2>
-        </div>
         <div className="featured_projects__heading__sub-title">
-          Things that I've built
+          Work
+        </div>
+        <div className="featured_projects__heading__title">
+          <h1>Projects</h1>
+        </div>
+        <div className="featured_projects__heading__sub-title" style={{ marginTop: "15px" }}>
+          A selection of things I've built — from full-stack web apps to mobile and academic projects.
         </div>
       </div>
 
