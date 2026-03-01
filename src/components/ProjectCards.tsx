@@ -1,6 +1,7 @@
 import React from 'react'
 import { Swiper, SwiperSlide } from "swiper/react"
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faLayerGroup } from "@fortawesome/free-solid-svg-icons"
 import { Pagination } from "swiper/modules";
 import "swiper/swiper-bundle.css";
 
@@ -10,7 +11,7 @@ type Project = {
   id: string;
   title: string;
   description: string;
-  tech: string;
+  tech: { name: string; color: string }[];
   liveUrl?: string;
   repoUrl?: string;
 };
@@ -20,7 +21,11 @@ const projects: Project[] = [
     id: "deckly",
     title: "Deckly",
     description: "Language-learning app focused on retention and recall.",
-    tech: "React • TypeScript • API",
+    tech: [
+      { name: "React", color: "#00d8ff" },
+      { name: "TypeScript", color: "#3178c6" },
+      { name: "API", color: "#c86bab" }
+    ],
     liveUrl: "#",
     repoUrl: "#",
   },
@@ -28,7 +33,10 @@ const projects: Project[] = [
     id: "afterlife",
     title: "Afterlife",
     description: "Puzzle-based game built during a Game Jam.",
-    tech: "Unity • C#",
+    tech: [
+      { name: "Unity", color: "#ffffff" },
+      { name: "C#", color: "#9b4993" }
+    ],
     liveUrl: "#",
     repoUrl: "#",
   },
@@ -36,7 +44,11 @@ const projects: Project[] = [
     id: "fitness-hub",
     title: "Fitness Hub",
     description: "Multi-platform fitness tracking and planning app.",
-    tech: "React • TypeScript • C#",
+    tech: [
+      { name: "React", color: "#00d8ff" },
+      { name: "TypeScript", color: "#3178c6" },
+      { name: "C#", color: "#9b4993" }
+    ],
     liveUrl: "#",
     repoUrl: "#",
   },
@@ -44,45 +56,31 @@ const projects: Project[] = [
 
 const ProjectCard: React.FC<{ project: Project }> = ({ project }) => (
   <article className="featured_projects__card">
-    <div className="featured_projects__card__title">
-      <h2>{project.title}</h2>
-    </div>
+    <FontAwesomeIcon icon={faLayerGroup} className="featured_projects__card__icon" />
+    <div className="featured_projects__card__text-wrapper">
+      <div className="featured_projects__card__title">
+        <h3>{project.title}</h3>
+      </div>
 
-    <div className="featured_projects__card__desc">
-      {project.description}
-    </div>
+      <div className="featured_projects__card__desc">
+        {project.description}
+      </div>
 
-    <div className="featured_projects__card__techs">
-      {project.tech}
-    </div>
-
-    <div className="featured_projects__card__buttons">
-      {project.liveUrl && (
-        <a
-          href={project.liveUrl}
-          className="featured_projects__card__buttons__button1"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          View Project
-        </a>
-      )}
-
-      {project.repoUrl && (
-        <a
-          href={project.repoUrl}
-          className="featured_projects__card__buttons__button2"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          GitHub
-        </a>
-      )}
+      <div className="featured_projects__card__techs">
+        {project.tech.map((t) => (
+          <div
+            className="featured_projects__card__techs__tech"
+            style={{ "--dot-color": t.color } as React.CSSProperties}
+          >
+            {t.name}
+          </div>
+        ))}
+      </div>
     </div>
   </article>
 );
 
-const FeaturedProjects: React.FC = () => {
+const ProjectCards: React.FC = () => {
   return (
     <section className="featured_projects">
       <div className="featured_projects__heading">
@@ -120,6 +118,6 @@ const FeaturedProjects: React.FC = () => {
   );
 };
 
-export default FeaturedProjects;
+export default ProjectCards;
 
 
