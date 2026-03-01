@@ -1,12 +1,15 @@
 .intro-banner {
     // background: grey;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     &__text-wrapper {
         display: flex;
         flex-direction: column;
         min-width: fit-content;
         padding-left: 2%;
+        text-align: center;
 
         &__headline {
             &__name {
@@ -14,6 +17,8 @@
             }
             &__desc1 {
                 line-height: 2;
+                font-size: 1.2rem;
+                color: #8290a6;
             }
 
             &__desc2 {
@@ -24,6 +29,7 @@
         &__buttons {
             margin-top: 20px;
             display: flex;
+            justify-content: center;
             gap: 20px;
 
             &__button1 {
