@@ -1,9 +1,8 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/Navbar"
 import IntroBanner from "./components/intro_banner"
-import TechIcons from "./components/tech_icons"
 import ProjectCards from "./components/ProjectCards"
 import Experiences from "./components/Experiences"
+import Contact from "./components/Contact"
 
 function App() {
   return (
@@ -12,6 +11,7 @@ function App() {
       <IntroBanner />
       <ProjectCards />
       <Experiences />
+      <Contact />
     </div>
   )
 }
