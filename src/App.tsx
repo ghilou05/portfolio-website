@@ -9,7 +9,6 @@ function App() {
     <div>
       <Navbar />
       <IntroBanner />
-      <TechIcons />
       <FeaturedProjects />
     </div>
   )
