@@ -18,7 +18,7 @@ const experiences: Experience[] = [
         role: "Placement Web Developer",
         company: "Your Company Name",
         date: "Sep 2024 – Present",
-        description: "Working as a full-stack developer on production web applications. Building features with React and .NET, managing MySQL databases, and collaborating in an agile team.",
+        description: "Placeholder",
         tech: ["React", ".NET", "MySQL", "Agile"],
         icon: faBriefcase,
     },
