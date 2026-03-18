@@ -32,19 +32,17 @@ const Navbar: React.FC = () => {
                 </button>
 
                 <div className="navbar-links">
-                    <a href="/">About</a>
-                    <a href="/">Projects</a>
-                    <a href="/">Experience</a>
-                    <a href="/">Contact</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#experiences">Experience</a>
+                    <a href="#contact">Contact</a>
 
                 </div>
             </div>
 
             <div className={`mobile-menu ${hamburgerIsOpen ? "open" : ""}`}>
-                <a href="/" onClick={() => setHamburgerIsOpen(false)}>About</a>
-                <a href="/" onClick={() => setHamburgerIsOpen(false)}>Projects</a>
-                <a href="/" onClick={() => setHamburgerIsOpen(false)}>Experience</a>
-                <a href="/" onClick={() => setHamburgerIsOpen(false)}>Contact</a>
+                <a href="#projects" onClick={() => setHamburgerIsOpen(false)}>Projects</a>
+                <a href="#experiences" onClick={() => setHamburgerIsOpen(false)}>Experience</a>
+                <a href="#contact" onClick={() => setHamburgerIsOpen(false)}>Contact</a>
             </div>
         </nav>
     )

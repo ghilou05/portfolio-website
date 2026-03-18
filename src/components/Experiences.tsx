@@ -104,7 +104,7 @@ const TimelineItem: React.FC<{ exp: Experience, isLast: boolean }> = ({ exp, isL
 
 const Experiences: React.FC = () => {
     return (
-        <section className="experiences">
+        <section className="experiences" id="experiences">
             <div className="experiences__heading">
                 <div className="experiences__heading__sub-title">
                     Background

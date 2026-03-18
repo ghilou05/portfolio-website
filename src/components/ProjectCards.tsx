@@ -108,7 +108,7 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => (
 
 const ProjectCards: React.FC = () => {
   return (
-    <section className="featured_projects">
+    <section className="featured_projects" id='projects'>
       <div className="featured_projects__heading">
         <div className="featured_projects__heading__sub-title">
           Work
