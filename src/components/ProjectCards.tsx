@@ -21,7 +21,7 @@ const projects: Project[] = [
   {
     id: "deckly",
     title: "Deckly",
-    description: "Language-learning app focused on retention and recall.",
+    description: "A simple language learning app built around flashcards and spaced repetition to make vocabulary practice more structured and consistent.",
     tech: [
       { name: "React", color: "#00d8ff" },
       { name: "TypeScript", color: "#3178c6" },
@@ -33,10 +33,21 @@ const projects: Project[] = [
   {
     id: "afterlife",
     title: "Afterlife",
-    description: "Puzzle-based game built during a Game Jam.",
+    description: "A 2D GameJam game developed in a small team, where players navigate through levels solving puzzles and overcoming obstacles to progress.",
     tech: [
       { name: "Unity", color: "#ffffff" },
       { name: "C#", color: "#9b4993" }
+    ],
+    liveUrl: "#",
+    repoUrl: "#",
+  },
+  {
+    id: "snapbook",
+    title: "Snapbook",
+    description: "A hackathon-built web app where users upload landmark photos, automatically detect their locations, and visualise visited countries on an interactive 3D globe.",
+    tech: [
+      {name: "React", color: "#00d8ff"},
+      {name: "Firebase", color: "red"}
     ],
     liveUrl: "#",
     repoUrl: "#",
@@ -97,7 +108,7 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => (
 
 const ProjectCards: React.FC = () => {
   return (
-    <section className="featured_projects">
+    <section className="featured_projects" id='projects'>
       <div className="featured_projects__heading">
         <div className="featured_projects__heading__sub-title">
           Work

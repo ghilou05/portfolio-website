@@ -15,22 +15,31 @@ type Experience = {
 const experiences: Experience[] = [
     {
         id: "placement-dev",
-        role: "Placement Web Developer",
-        company: "Your Company Name",
-        date: "Sep 2024 – Present",
-        description: "Placeholder",
+        role: "Placement Developer",
+        company: "Cantarus",
+        date: "July 2025 – Present",
+        description: "Working as a full-stack developer on production web applications. Building features with React and .NET, managing MySQL databases, and collaborating in an agile team.",
         tech: ["React", ".NET", "MySQL", "Agile"],
+        icon: faBriefcase,
+    },
+        {
+        id: "tutor",
+        role: "Computer Science & Mathematics Tutor",
+        company: "Trinity CofE High School & Sixth Form",
+        date: "Jan 2024 – June 2024",
+        description: "Provide one-to-one and small group tutoring in maths and computer science, helping students understand difficult concepts and improve their exam performance.",
+        tech: [],
         icon: faBriefcase,
     },
     {
         id: "bsc-cs",
         role: "BSc Computer Science & Mathematics",
         company: "Your University",
-        date: "Sep 2022 – Jun 2026 (expected)",
+        date: "Sep 2023 – Jun 2027 (expected)",
         description: "Studying core CS modules alongside pure and applied mathematics. Key modules include Algorithms & Data Structures, Discrete Mathematics, Machine Learning, and Software Engineering.",
         tech: ["Algorithms", "Machine Learning", "Maths", "Software Eng."],
         icon: faGraduationCap,
-    },
+    }
 ];
 
 const TimelineItem: React.FC<{ exp: Experience, isLast: boolean }> = ({ exp, isLast }) => {
@@ -95,7 +104,7 @@ const TimelineItem: React.FC<{ exp: Experience, isLast: boolean }> = ({ exp, isL
 
 const Experiences: React.FC = () => {
     return (
-        <section className="experiences">
+        <section className="experiences" id="experiences">
             <div className="experiences__heading">
                 <div className="experiences__heading__sub-title">
                     Background

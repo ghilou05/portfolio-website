@@ -8,7 +8,13 @@ const tech_icons: React.FC = () => {
         { src: "/typescript.png", name: "TypeScript" },
         { src: "/umbraco.png", name: "Umbraco" },
         { src: "/kentico.png", name: "Kentico" },
-        { src: "", name: "Python"}
+        { src: "/Python_logo_01.svg.png", name: "Python"},
+        { src: "/sql.png", name: "SQL" },
+        { src: "/html.jpg", name: "HTML" },
+        { src: "/css.png", name: "CSS" },
+        { src: "/javascript.png", name: "JavaScript" },
+        { src: "/java.png", name: "Java" }
+
     ];
 
     return (
