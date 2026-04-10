@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faLayerGroup, faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons"
 import { faGithub } from "@fortawesome/free-brands-svg-icons"
 import { Pagination } from "swiper/modules";
+import { EffectCards } from 'swiper/modules';
 import "swiper/swiper-bundle.css";
 
 
@@ -131,11 +132,9 @@ const ProjectCards: React.FC = () => {
       {/* MOBILE — Swiper */}
       <Swiper
         className="featured_projects__cards featured_projects__cards--mobile"
-        modules={[Pagination]}
-        pagination={{ clickable: true }}
-        spaceBetween={50}
-        slidesPerView={1}
-        loop
+        effect={'cards'}
+        grabCursor={true}
+        modules={[EffectCards]}
       >
         {projects.map((project) => (
           <SwiperSlide key={project.id}>
