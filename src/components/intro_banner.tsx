@@ -14,7 +14,7 @@ const intro_banner: React.FC = () => {
                 </div>
                 <div className="intro-banner__text-wrapper__buttons">
                     <div className="intro-banner__text-wrapper__buttons__button1">View Projects</div>
-                    <div className="intro-banner__text-wrapper__buttons__button2">Contact Me</div>
+                    <a className="intro-banner__text-wrapper__buttons__button2" href="#contact">Contact Me</a>
                 </div>
             </div>
             <TechIcons />
