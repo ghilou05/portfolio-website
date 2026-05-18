@@ -28,7 +28,6 @@ const projects: Project[] = [
       { name: "TypeScript", color: "#3178c6" },
       { name: "API", color: "#c86bab" }
     ],
-    liveUrl: "#",
     repoUrl: "#",
   },
   {

@@ -47,13 +47,15 @@
                 padding: 10px 25px; // Slightly larger for premium feel
                 border-radius: 8px;
                 box-shadow: 0 4px 15px rgba(53, 80, 159, 0.3);
-                transition: transform 0.2s ease, box-shadow 0.2s ease;
+                transition: transform 0.2s ease, box-shadow 0.2s ease; 
                 font-weight: 400;
                 cursor: pointer;
+                color: white;
 
                 &:hover {
                     transform: translateY(-2px);
                     box-shadow: 0 6px 20px rgba(53, 80, 159, 0.4);
+                    color:white;
                 }
             }
 

@@ -49,7 +49,7 @@ const Contact: React.FC = () => {
                     <div className="contact__info__card">
                         <div className="contact__info__section">
                             <label>EMAIL</label>
-                            <a href="mailto:alex@example.com">alex@example.com</a>
+                            <a href="mailto:ghilesbouaraba@outlook.com">ghilesbouaraba@outlook.com</a>
                         </div>
                         <div className="contact__info__section">
                             <label>LOCATION</label>
@@ -61,7 +61,7 @@ const Contact: React.FC = () => {
                                 <a href="#" target="_blank" rel="noopener noreferrer" className="contact__info__social-box">
                                     <FontAwesomeIcon icon={faGithub} />
                                 </a>
-                                <a href="#" target="_blank" rel="noopener noreferrer" className="contact__info__social-box">
+                                <a href="www.linkedin.com/in/ghilesbouaraba" target="_blank" rel="noopener noreferrer" className="contact__info__social-box">
                                     <FontAwesomeIcon icon={faLinkedin} />
                                 </a>
                                 <a href="mailto:alex@example.com" className="contact__info__social-box">
