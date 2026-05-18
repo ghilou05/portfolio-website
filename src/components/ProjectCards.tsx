@@ -3,7 +3,6 @@ import { Swiper, SwiperSlide } from "swiper/react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faLayerGroup, faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons"
 import { faGithub } from "@fortawesome/free-brands-svg-icons"
-import { Pagination } from "swiper/modules";
 import { EffectCards } from 'swiper/modules';
 import "swiper/swiper-bundle.css";
 
