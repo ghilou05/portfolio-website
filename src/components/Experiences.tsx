@@ -19,7 +19,7 @@ const experiences: Experience[] = [
         company: "Cantarus",
         date: "July 2025 – July 2026",
         description: "Working as a full-stack developer on various CMS .NET web applications, including Umbraco, Kentico and DNN. ",
-        tech: ["HTML/CSS", "JavaScript/TypeScript", "C# .NET", "SQL Server", "SASS", "Vue JS"],
+        tech: ["HTML/CSS", "JavaScript/TypeScript", "C# .NET", "SQL Server", "SASS", "Vue JS", "Git"],
         icon: faBriefcase,
     },
         {
