@@ -43,7 +43,7 @@ const projects: Project[] = [
   {
     id: "snapbook",
     title: "Snapbook",
-    description: "A hackathon-built web app where users upload landmark photos, automatically detect their locations, and visualise visited countries on an interactive 3D globe.",
+    description: "A hackathon-built web app as a team of 4, where users upload landmark photos, automatically detect their locations, and visualise visited countries on an interactive 3D globe.",
     tech: [
       {name: "React", color: "#00d8ff"},
       {name: "Firebase", color: "red"}
@@ -72,6 +72,30 @@ const projects: Project[] = [
     ],
     liveUrl: "https://yt-web-project.vercel.app/",
     repoUrl: "https://github.com/ghilou05/yt-web-project",
+  },
+  {
+    id: "amphibian-engine",
+    title: "Amphibian Engine",
+    description: "A hackathon-built chrome extension as a team of 4, that raises a virtual pet according to how many web pages you visit.",
+    tech: [
+      { name: "HTML/CSS", color: "white" },
+      { name: "JavaScript", color: "orange" },
+      { name: "MongoDB", color: "purple" }
+    ],
+    repoUrl: "https://github.com/ghilou05/Amphibian-Engine",
+
+  },
+  {
+    id: "flicks",
+    title: "Flicks",
+    description: "A simple movie recommendation engine, for our first year team project, built as a team of 7",
+    tech: [
+      { name: "HTML/CSS", color: "white" },
+      { name: "JavaScript", color: "orange" },
+      { name: "FastAPI", color: "red" }
+
+    ],
+    repoUrl: "https://github.com/ghilou05/Flicks"
   }
 ];
 
