@@ -65,7 +65,7 @@ const projects: Project[] = [
   {
     id: "yt-shorts-compiler",
     title: "Shorts Compiler",
-    description: "A simple tool that generates an autoscrolling playlist of all of a youtube channel's shorts",
+    description: "A simple tool that generates an autoscrolling playlist of all of a youtube channel's shorts.",
     tech: [
       { name: "Next.js", color: "#3178c6" },
       { name: "Youtube API", color: "orange" }
@@ -88,7 +88,7 @@ const projects: Project[] = [
   {
     id: "flicks",
     title: "Flicks",
-    description: "A simple movie recommendation engine, for our first year team project, built as a team of 7",
+    description: "A simple movie recommendation engine, for our first year team project, built as a team of 7.",
     tech: [
       { name: "HTML/CSS", color: "white" },
       { name: "JavaScript", color: "orange" },
