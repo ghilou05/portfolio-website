@@ -58,13 +58,13 @@ const Contact: React.FC = () => {
                         <div className="contact__info__section">
                             <label>SOCIAL</label>
                             <div className="contact__info__socials">
-                                <a href="#" target="_blank" rel="noopener noreferrer" className="contact__info__social-box">
+                                <a href="https://github.com/ghilou05" target="_blank" rel="noopener noreferrer" className="contact__info__social-box">
                                     <FontAwesomeIcon icon={faGithub} />
                                 </a>
-                                <a href="www.linkedin.com/in/ghilesbouaraba" target="_blank" rel="noopener noreferrer" className="contact__info__social-box">
+                                <a href="https://www.linkedin.com/in/ghiles-bouaraba-1569b4245/" target="_blank" rel="noopener noreferrer" className="contact__info__social-box">
                                     <FontAwesomeIcon icon={faLinkedin} />
                                 </a>
-                                <a href="mailto:alex@example.com" className="contact__info__social-box">
+                                <a href="mailto:ghilesbouaraba@outlook.com" className="contact__info__social-box">
                                     <FontAwesomeIcon icon={faEnvelope} />
                                 </a>
                             </div>

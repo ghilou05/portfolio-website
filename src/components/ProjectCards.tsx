@@ -23,23 +23,23 @@ const projects: Project[] = [
     title: "Deckly",
     description: "A simple language learning app built around flashcards and spaced repetition to make vocabulary practice more structured and consistent.",
     tech: [
-      { name: "React", color: "#00d8ff" },
-      { name: "TypeScript", color: "#3178c6" },
-      { name: "API", color: "#c86bab" }
+      { name: "Python", color: "#00d8ff" },
+      { name: "SQLite", color: "#3178c6" },
+      { name: "Machine Learning", color: "#c86bab" }
     ],
-    repoUrl: "#",
+    repoUrl: "https://github.com/ghilou05/Deckly",
   },
-  {
-    id: "afterlife",
-    title: "Afterlife",
-    description: "A 2D GameJam game developed in a small team, where players navigate through levels solving puzzles and overcoming obstacles to progress.",
-    tech: [
-      { name: "Unity", color: "#ffffff" },
-      { name: "C#", color: "#9b4993" }
-    ],
-    liveUrl: "#",
-    repoUrl: "#",
-  },
+  // {
+  //   id: "afterlife",
+  //   title: "Afterlife",
+  //   description: "A 2D GameJam game developed in a small team, where players navigate through levels solving puzzles and overcoming obstacles to progress.",
+  //   tech: [
+  //     { name: "Unity", color: "#ffffff" },
+  //     { name: "C#", color: "#9b4993" }
+  //   ],
+  //   liveUrl: "#",
+  //   repoUrl: "#",
+  // },
   {
     id: "snapbook",
     title: "Snapbook",
@@ -48,21 +48,31 @@ const projects: Project[] = [
       {name: "React", color: "#00d8ff"},
       {name: "Firebase", color: "red"}
     ],
-    liveUrl: "#",
-    repoUrl: "#",
+    liveUrl: "https://snapbook-nine.vercel.app/",
+    repoUrl: "https://github.com/ghilou05/snapbook/tree/main",
   },
   {
     id: "fitness-hub",
     title: "Fitness Hub",
-    description: "Multi-platform fitness tracking and planning app.",
+    description: "Currently developing a multi-platform fitness tracking and planning app.",
     tech: [
-      { name: "React", color: "#00d8ff" },
-      { name: "TypeScript", color: "#3178c6" },
-      { name: "C#", color: "#9b4993" }
+      { name: "Next.js", color: "#3178c6" },
+      { name: "TypeScript", color: "#00d8ff"},
+      { name: "Supabase", color: "#9b4993" }
     ],
-    liveUrl: "#",
-    repoUrl: "#",
+    liveUrl: "https://fithub-live-repo-qk18.vercel.app/",
   },
+  {
+    id: "yt-shorts-compiler",
+    title: "Shorts Compiler",
+    description: "A simple tool that generates an autoscrolling playlist of all a youtube channels shorts",
+    tech: [
+      { name: "Next.js", color: "#3178c6" },
+      { name: "Youtube API", color: "orange" }
+    ],
+    liveUrl: "https://yt-web-project.vercel.app/",
+    repoUrl: "https://github.com/ghilou05/yt-web-project",
+  }
 ];
 
 const ProjectCard: React.FC<{ project: Project }> = ({ project }) => (

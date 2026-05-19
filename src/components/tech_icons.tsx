@@ -10,11 +10,9 @@ const tech_icons: React.FC = () => {
         { src: "/kentico.png", name: "Kentico" },
         { src: "/Python_logo_01.svg.png", name: "Python"},
         { src: "/sql.png", name: "SQL" },
-        { src: "/html.jpg", name: "HTML" },
+        { src: "/html.png", name: "HTML" },
         { src: "/css.png", name: "CSS" },
-        { src: "/javascript.png", name: "JavaScript" },
-        { src: "/java.png", name: "Java" }
-
+        { src: "/js.png", name: "JavaScript" },
     ];
 
     return (
