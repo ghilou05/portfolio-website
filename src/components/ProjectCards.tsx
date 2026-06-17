@@ -19,6 +19,20 @@ type Project = {
 
 const projects: Project[] = [
   {
+    id: "deckly-reloaded",
+    title: "Deckly Reloaded",
+    description: "A rebuild of the original deckly, as a proper functioning webapp.",
+    tech: [
+      { name: ".NET 9", color: "purple", },
+      { name: "React.ts", color: "#00d8ff"},
+      { name: "Sql Server", color: "blue"},
+      { name: "Azure", color: "lightblue"}
+    ],
+    liveUrl: "https://agreeable-tree-0b4032b03.7.azurestaticapps.net/login",
+    repoUrl: "https://github.com/ghilou05/deckly-reloaded"
+
+  },
+  {
     id: "deckly",
     title: "Deckly",
     description: "A simple language learning app built around flashcards and spaced repetition to make vocabulary practice more structured and consistent.",
