@@ -19,19 +19,36 @@ type Project = {
 
 const projects: Project[] = [
   {
-    id: "deckly-reloaded",
-    title: "Deckly Reloaded",
-    description: "A rebuild of the original deckly, as a proper functioning webapp.",
+    id: "2075",
+    title: "2075",
+    description: "A fun hackathon project where me and my friend teamed up to make a game where you fight an LLM-powered robot",
     tech: [
-      { name: ".NET 9", color: "purple", },
-      { name: "React.ts", color: "#00d8ff"},
-      { name: "Sql Server", color: "blue"},
-      { name: "Azure", color: "lightblue"}
+      { name: "Three JS", color: "blue" },
+      { name: "Vite", color: "pink" },
+      { name: "Mediapipe", color: "orange" },
+      { name: "ElevenLabs", color: "white" },
+      { name: "Qwen" , color: "purple" },
+      { name: "node.js", color: "green" },
+      { name: "express.js", color: "yellow" }
     ],
-    liveUrl: "https://agreeable-tree-0b4032b03.7.azurestaticapps.net/login",
-    repoUrl: "https://github.com/ghilou05/deckly-reloaded"
+    liveUrl: "https://2075-ivory.vercel.app/",
+    repoUrl: "https://github.com/ghilou05/2075"
 
   },
+  // {
+  //   id: "deckly-reloaded",
+  //   title: "Deckly Reloaded",
+  //   description: "A rebuild of the original deckly, as a proper functioning webapp.",
+  //   tech: [
+  //     { name: ".NET 9", color: "purple", },
+  //     { name: "React.ts", color: "#00d8ff"},
+  //     { name: "Sql Server", color: "blue"},
+  //     { name: "Azure", color: "lightblue"}
+  //   ],
+  //   liveUrl: "https://agreeable-tree-0b4032b03.7.azurestaticapps.net/login",
+  //   repoUrl: "https://github.com/ghilou05/deckly-reloaded"
+
+  // },
   {
     id: "deckly",
     title: "Deckly",
