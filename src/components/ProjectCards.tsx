@@ -19,6 +19,20 @@ type Project = {
 
 const projects: Project[] = [
   {
+    id: "Ecoprompt",
+    title: "EcoPrompt",
+    description: "A project built for IBMHack where me and my friends built an app to help optimise prompts to minimize water usage at AI Datacentres",
+    tech: [
+      { name: "NextJS", color: "white"},
+      { name: "Qwen", color: "purple" },
+      { name: "Supabase", color: "green" },
+      { name: "React", color: "blue" },
+      { name: "FastAPI", color: "yellow" }
+    ],
+    liveUrl: "https://eco-prompt-production.vercel.app/",
+    repoUrl: "https://github.com/nfernandes22/EcoPromptProduction"
+  },
+  {
     id: "2075",
     title: "2075",
     description: "A fun hackathon project where me and my friend teamed up to make a game where you fight an LLM-powered robot",
